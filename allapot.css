@@ -20,7 +20,10 @@ h2{
     display: inline-block;
     
 }
-   
+.lista{
+    list-style-image: url('symbol-3296656_640.png');
+    
+}   
 
 #f{
     grid-area: foldal
