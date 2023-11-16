@@ -1,0 +1,80 @@
+body{
+    background-image: url(hatter.jpg);
+    background-size: cover;
+    color: beige;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 3px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
+
+}
+header{
+    text-align: center;
+}
+h2{
+    background: thistle;
+    display: inline-block;
+	border-radius: 15px;
+    display: inline-block;
+    
+}
+   
+
+#f{
+    grid-area: foldal
+
+}
+#rend{
+    grid-area: rend;
+
+}
+#stat{
+    grid-area: stat;
+
+}
+#prof{
+    grid-area: prof;
+}
+#cimsor{
+    grid-area: cim;
+
+}
+#r1{
+    grid-area: r1;
+
+}
+#r2{
+    grid-area: r2;
+}
+#r3{
+    grid-area: r3;
+}
+#cimsor2{
+    grid-area: cim2;
+}
+#r4{
+    grid-area: r4;
+}
+#r5{
+    grid-area: r5;
+
+}
+#alja{
+    grid-area: alja;
+}
+
+#nav{
+    display: grid;
+    grid-template-areas: 
+    'foldal rend stat prof prof';
+    
+}
+#tartalom{
+    display:grid;
+    grid-template-areas: 
+    'cim cim cim cim2 cim2'
+    'r1 r2 r3 r4 r5'
+    'alja alja alja alja alja';
+}
