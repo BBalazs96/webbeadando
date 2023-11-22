@@ -6,15 +6,17 @@ body{
     -webkit-text-stroke-color: black;
     text-shadow: 3px;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 1px 1px 2px black;
+    
+    font-family: Helvetica;
 
 }
 header{
     text-align: center;
 }
 h2{
-    background: thistle;
+    background: wheat;
     display: inline-block;
 	border-radius: 15px;
     display: inline-block;
@@ -69,15 +71,77 @@ h2{
 }
 
 #nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: grid;
     grid-template-areas: 
     'foldal rend stat prof prof';
     
 }
 #tartalom{
-    display:grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-areas: 
     'cim cim cim cim2 cim2'
     'r1 r2 r3 r4 r5'
     'alja alja alja alja alja';
 }
+
+@media screen and (max-width: 600px) {
+    #tartalom{
+        grid-template-areas: 
+        'cim' 
+        'r1'
+        'r2'
+        'r3'
+        'cim2'
+        'r4'
+        'r5'
+        'alja';
+        
+        
+    }
+    
+    #nav{
+        grid-template-areas: 
+        'foldal '
+        'rend '
+        'stat'
+        'prof'
+        ' prof';
+    }
+    body{
+        font-size: 15px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1500px) {
+        
+        #tartalom{
+            grid-template-areas: 
+            'cim' 'cim' 
+            'r1'  'r2'
+            'r3' 'r3'
+            'cim2' 'cim2'
+            'r4' 'r5'
+            'alja' 'alja';
+            
+            
+    
+        }
+        #nav{
+            grid-template-areas: 
+            'foldal rend'
+            'stat prof';
+        }
+        body{
+            font-size: 15px;
+        }
+        
+    }
